@@ -36,9 +36,9 @@ public class UserController {
 		
 		Users user = ur.login(username, password);
 		
-		if(user == null) {
+		if(user == null) 
 			throw new UserNotFoundException("Please Enter a valid username/password");
-		}
+		
 		
 		return new ResponseEntity<Users>(user, HttpStatus.ACCEPTED);	
 		

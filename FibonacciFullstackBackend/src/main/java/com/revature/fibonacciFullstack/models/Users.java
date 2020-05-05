@@ -23,7 +23,7 @@ public class Users {
 	String lastName;
 	@Column(name="age")
 	int age;
-	@Column(unique=true,name="user_name")
+	@Column(unique=true,name="username")
 	String username;
 	@Column(name="password")
 	String password;
